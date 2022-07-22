@@ -16,7 +16,7 @@ router.get('/byTag/:tag', isAuth, searchController.searchByTags);
 
 // GET /search/byTagCategory/:
 
-router.get('/byTagCategory/:tags', isAuth, searchController.filterBycategoryAndCategory);
+router.get('/byTagCategory/:tags', isAuth, searchController.filterBycategoryAndTag);
 
 
 module.exports = router;
