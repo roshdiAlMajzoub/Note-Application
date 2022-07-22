@@ -57,7 +57,7 @@ exports.searchByTags = async (req, res, next) => {
 
 // an api for  sort notes by update date, filter by category and search by tags
 
-exports.filterBycategoryAndCategory = (req, res, next) => {
+exports.filterBycategoryAndTag = (req, res, next) => {
     const categId = req.params.categId;
     let tags = req.params.tags;
     tags = tags.split('rosh'); // here tags are sent in url params added between them rosh keyword
