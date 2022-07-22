@@ -60,7 +60,7 @@ exports.searchByTags = async (req, res, next) => {
 exports.filterBycategoryAndCategory = (req, res, next) => {
     const categId = req.params.categId;
     let tags = req.params.tags;
-    tags = tags.split('rosh');
+    tags = tags.split('rosh'); // here tags are sent in url params added between them rosh keyword
     console.log("tags", tags);
     let tagarr = [];
     let categoryCopy;
